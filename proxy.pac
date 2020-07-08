@@ -8,14 +8,6 @@ function FindProxyForURL(url, host) {
     if (shExpMatch(host,"liquid.com")) {
         return PROXY;
     }
-
-    if (shExpMatch(host,"*.deribit.com")) {
-        return PROXY;
-    }
-
-    if (shExpMatch(host,"deribit.com")) {
-        return PROXY;
-    }
     
     // Everything else directly!
     return "DIRECT";

@@ -10,6 +10,10 @@ function FindProxyForURL(url, host) {
         return PROXY;
     }
     
+    if (dnsDomainIs(host,"ftx.com")) {
+        return PROXY;
+    }
+    
     if (shExpMatch(host,"[*.]liquid.com")) {
         return PROXY;
     }

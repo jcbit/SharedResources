@@ -14,6 +14,14 @@ function FindProxyForURL(url, host) {
         return PROXY;
     }
     
+    if (dnsDomainIs(host,"binance.com")) {
+        return PROXY;
+    }
+    
+    if (dnsDomainIs(host,"huobi.com")) {
+        return PROXY;
+    }
+    
     if (shExpMatch(host,"[*.]liquid.com")) {
         return PROXY;
     }
